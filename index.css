@@ -1,0 +1,49 @@
+table {
+    width: 850px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+table tbody {
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 300px;
+}
+
+table thead tr {
+   display: block;
+}
+
+table thead {
+  background: black;
+  color:#fff;
+}
+
+
+table th, table td {
+  padding: 5px;
+}
+
+table th.timestamp, table td.timestamp {
+  text-align: right;
+  border-right: 1px solid #ccc;
+  width: 80px;
+}
+
+table th.message, table td.message {
+  text-align: left;
+  border-right: 1px solid #ccc;
+  width: 200px;
+}
+
+table th.channel, table td.channel {
+  text-align: right;
+  border-right: 1px solid #ccc;
+  width: 80px;
+}
+
+table th.data, table td.data {
+  text-align: left;
+  width: 440px;
+}

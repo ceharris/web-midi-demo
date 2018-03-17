@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>midijs</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <p>midijs</p>
+    <p>
+      <label for="port-select-input">Inputs:</label>
+      <select id="port-select-input">
+        <option value="no-selection">--</option>
+      </select>
+    </p>
+    <p style="display: none;">
+      <label for="port-select-output">Outputs:</label>
+      <select id="port-select-output">
+        <option value="no-selection">--</option>        
+      </select>
+    </p>
+
+    <table id="message-table">
+      <thead>
+        <tr>
+          <th class="timestamp">Timestamp</th>
+          <th class="message">Message</th>
+          <th class="channel">Channel</th>
+          <th class="data">Data</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
